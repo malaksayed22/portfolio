@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malak Sayed — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <ul class="nav__links">
+        <li><a href="#story" class="nav__link">Story</a></li>
+        <li><a href="#experience" class="nav__link">XP</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#story" class="mobile-link">Story</a></li>
+        <li><a href="#experience" class="mobile-link">XP</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════
+       SECTION 1 — VIDEO HERO (full viewport)
+  ══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <video
+        class="hero__video"
+        id="heroVideo"
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+      >
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__scroll-hint" id="scrollHint">
+        <span>scroll</span>
+        <div class="hero__scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SECTION 2 — PHOTO
+  ══════════════════════════════════════ -->
+    <section class="story" id="story">
+      <div class="story__photo-only">
+        <img
+          class="story__photo"
+          src="assets/hero-static.png"
+          alt="Malak Sayed"
+        />
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SECTION 3 — EXPERIENCE
+  ══════════════════════════════════════ -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal">
+          Where I've <span class="accent">been</span>
+        </h2>
+        <div class="xp-list">
+          <div class="xp-item reveal">
+            <div class="xp-item__left">
+              <div class="xp-item__co">CyberX</div>
+              <div class="xp-item__role">Cybersecurity Instructor</div>
+              <div class="xp-item__period">Aug 2024 – Oct 2024 · Cairo</div>
+            </div>
+            <div class="xp-item__right">
+              <ul>
+                <li>
+                  Delivered cybersecurity awareness training to all age groups
+                </li>
+                <li>
+                  Covered safe internet practices, threats, and data privacy
+                </li>
+                <li>
+                  The origin story: connecting tech to people made me want to
+                  build it
+                </li>
+              </ul>
+            </div>
+
+            <div class="xp-item__index">01</div>
+          </div>
+
+          <div class="xp-item reveal">
+            <div class="xp-item__left">
+              <div class="xp-item__co">T-Phoenix</div>
+              <div class="xp-item__role">Frontend Developer</div>
+              <div class="xp-item__period">Jan 2026 – Jun 2026 · Beni-Suef</div>
+            </div>
+            <div class="xp-item__right">
+              <ul>
+                <li>
+                  Built & maintained responsive web apps with React.js and
+                  Next.js
+                </li>
+                <li>
+                  Developed reusable UI components for cross-product consistency
+                </li>
+                <li>
+                  Translated design specs into clean, functional front-end code
+                </li>
+              </ul>
+            </div>
+
+            <div class="xp-item__index">02</div>
+          </div>
+
+          <div class="xp-item reveal">
+            <div class="xp-item__left">
+              <div class="xp-item__co">Freelance</div>
+              <div class="xp-item__role">Frontend Developer</div>
+              <div class="xp-item__period">Feb 2026 – Mar 2026 · Remote</div>
+            </div>
+            <div class="xp-item__right">
+              <ul>
+                <li>
+                  Designed & built a fully responsive restaurant menu website
+                </li>
+                <li>
+                  Implemented intuitive UI/UX to enhance customer browsing
+                </li>
+                <li>
+                  Solo from requirements to delivery — no hand-holding needed
+                </li>
+              </ul>
+            </div>
+
+            <div class="xp-item__index">03</div>
+          </div>
+
+          <div class="xp-item xp-item--edu reveal">
+            <div class="xp-item__left">
+              <div class="xp-item__co">Beni Suef National University</div>
+              <div class="xp-item__role">CS &amp; Artificial Intelligence</div>
+              <div class="xp-item__period">Sep 2023 – Jul 2027 · GPA 3.01</div>
+            </div>
+            <div class="xp-item__right">
+              <ul>
+                <li>
+                  ECPC Qualification — ICPC Collegiate Programming Contest
+                </li>
+                <li>Frontend Development Diploma</li>
+                <li>
+                  Algorithms, AI fundamentals, and system design — going deep
+                </li>
+              </ul>
+            </div>
+            <div class="xp-item__index">EDU</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SECTION 4 — PROJECTS
+  ══════════════════════════════════════ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">
+          What I've <span class="accent">built</span>
+        </h2>
+
+        <!-- FRONTEND / FULL-STACK -->
+        <div class="projects__category reveal">
+          <div class="projects__cat-label">
+            <span class="projects__cat-icon">◈</span> Frontend &amp; Full-Stack
+          </div>
+          <div class="projects__grid">
+            <article class="project-card project-card--wide">
+              <div class="project-card__num">01</div>
+              <div class="project-card__inner">
+                <div class="project-card__content">
+                  <div class="project-card__tags">
+                    <span>Next.js 14+</span><span>TypeScript</span
+                    ><span>NextAuth</span><span>REST API</span>
+                  </div>
+                  <h3>Shop-Mart</h3>
+                  <p>
+                    Full-stack e-commerce with cart, wishlist, order management,
+                    and secure checkout. SSR, API routes, and responsive UI for
+                    seamless cross-device performance.
+                  </p>
+                </div>
+                <div class="project-card__preview">
+                  <div class="browser-mock browser-mock--shopmart">
+                    <div class="browser-mock__bar">
+                      <span class="browser-mock__dot"></span>
+                      <span class="browser-mock__dot"></span>
+                      <span class="browser-mock__dot"></span>
+                      <div class="browser-mock__url">
+                        shop-mart-h6hi.vercel.app
+                      </div>
+                    </div>
+                    <div class="browser-mock__screen">
+                      <iframe
+                        src="https://shop-mart-h6hi.vercel.app"
+                        class="browser-mock__iframe"
+                        scrolling="no"
+                        loading="lazy"
+                        title="Shop-Mart preview"
+                      ></iframe>
+                      <a
+                        href="https://shop-mart-h6hi.vercel.app"
+                        target="_blank"
+                        rel="noopener"
+                        class="browser-mock__overlay"
+                        >View Live ↗</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__glyph">E-Commerce</div>
+                <a
+                  href="https://shop-mart-h6hi.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__link"
+                  >↗ Live Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__num">02</div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span>Next.js</span><span>Framer Motion</span>
+                </div>
+                <h3>Velocity</h3>
+                <p>
+                  Sportswear storefront with fluid transitions and scroll
+                  animations. Premium feel with collections, wishlist, and cart.
+                </p>
+              </div>
+              <div class="project-card__preview">
+                <div class="browser-mock browser-mock--velocity">
+                  <div class="browser-mock__bar">
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <div class="browser-mock__url">
+                      velocity-project-nine.vercel.app
+                    </div>
+                  </div>
+                  <div class="browser-mock__screen">
+                    <iframe
+                      src="https://velocity-project-nine.vercel.app"
+                      class="browser-mock__iframe"
+                      scrolling="no"
+                      loading="lazy"
+                      title="Velocity preview"
+                    ></iframe>
+                    <a
+                      href="https://velocity-project-nine.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                      class="browser-mock__overlay"
+                      >View Live ↗</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__glyph">Storefront</div>
+                <a
+                  href="https://velocity-project-nine.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__link"
+                  >↗ Live Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__num">03</div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span>React</span><span>Dark UI</span>
+                </div>
+                <h3>Freelancer Studio</h3>
+                <p>
+                  Dark-themed dashboard to track clients, projects, and tasks.
+                  UI/UX-heavy — built to actually feel good to use.
+                </p>
+              </div>
+              <div class="project-card__preview">
+                <div class="browser-mock browser-mock--freelancer">
+                  <div class="browser-mock__bar">
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <div class="browser-mock__url">
+                      freelancer-studio.vercel.app
+                    </div>
+                  </div>
+                  <div class="browser-mock__screen">
+                    <iframe
+                      src="https://freelancer-studio.vercel.app"
+                      class="browser-mock__iframe"
+                      scrolling="no"
+                      loading="lazy"
+                      title="Freelancer Studio preview"
+                    ></iframe>
+                    <a
+                      href="https://freelancer-studio.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                      class="browser-mock__overlay"
+                      >View Live ↗</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__glyph">Dashboard</div>
+                <a
+                  href="https://freelancer-studio.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__link"
+                  >↗ Live Demo</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- AI + FRONTEND -->
+        <div class="projects__category reveal">
+          <div class="projects__cat-label projects__cat-label--ai">
+            <span class="projects__cat-icon">⬡</span> AI-Powered &amp;
+            Intelligent
+          </div>
+          <div class="projects__grid">
+            <article class="project-card project-card--ai project-card--wide">
+              <div class="project-card__num">01</div>
+              <div class="project-card__inner">
+                <div class="project-card__content">
+                  <div class="project-card__tags">
+                    <span>React</span><span>AI Integration</span>
+                  </div>
+                  <h3>BotStudio AI</h3>
+                  <p>
+                    Visual chatbot builder powered by AI. Design, train, and
+                    deploy intelligent conversational agents — no backend
+                    required.
+                  </p>
+                </div>
+                <div class="project-card__preview">
+                  <div class="browser-mock browser-mock--botstudio">
+                    <div class="browser-mock__bar">
+                      <span class="browser-mock__dot"></span>
+                      <span class="browser-mock__dot"></span>
+                      <span class="browser-mock__dot"></span>
+                      <div class="browser-mock__url">botstudio-ai.vercel.app</div>
+                    </div>
+                    <div class="browser-mock__screen">
+                      <iframe
+                        src="https://botstudio-ai.vercel.app"
+                        class="browser-mock__iframe"
+                        scrolling="no"
+                        loading="lazy"
+                        title="BotStudio AI preview"
+                      ></iframe>
+                      <a
+                        href="https://botstudio-ai.vercel.app"
+                        target="_blank"
+                        rel="noopener"
+                        class="browser-mock__overlay"
+                        >View Live ↗</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__glyph">AI · Chatbot</div>
+                <a
+                  href="https://botstudio-ai.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__link"
+                  >↗ Live Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card project-card--ai">
+              <div class="project-card__num">02</div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span>React</span><span>AI Integration</span>
+                </div>
+                <h3>PostMortem AI</h3>
+                <p>
+                  AI-powered incident postmortem tool. Turn outages into
+                  structured reports instantly — root cause, timeline, and
+                  action items auto-generated.
+                </p>
+              </div>
+              <div class="project-card__preview">
+                <div class="browser-mock browser-mock--postmortem">
+                  <div class="browser-mock__bar">
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <div class="browser-mock__url">postmortem-ai.vercel.app</div>
+                  </div>
+                  <div class="browser-mock__screen">
+                    <iframe
+                      src="https://postmortem-ai.vercel.app"
+                      class="browser-mock__iframe"
+                      scrolling="no"
+                      loading="lazy"
+                      title="PostMortem AI preview"
+                    ></iframe>
+                    <a
+                      href="https://postmortem-ai.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                      class="browser-mock__overlay"
+                      >View Live ↗</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__glyph">AI · DevOps</div>
+                <a
+                  href="https://postmortem-ai.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__link"
+                  >↗ Live Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card project-card--ai">
+              <div class="project-card__num">03</div>
+              <div class="project-card__content">
+                <div class="project-card__tags">
+                  <span>React</span><span>AI Integration</span>
+                </div>
+                <h3>Req AI</h3>
+                <p>
+                  AI requirements assistant that transforms raw ideas into
+                  structured specs. From vague prompts to clear, actionable
+                  product requirements.
+                </p>
+              </div>
+              <div class="project-card__preview">
+                <div class="browser-mock browser-mock--reqai">
+                  <div class="browser-mock__bar">
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <span class="browser-mock__dot"></span>
+                    <div class="browser-mock__url">req-ai-one.vercel.app</div>
+                  </div>
+                  <div class="browser-mock__screen">
+                    <iframe
+                      src="https://req-ai-one.vercel.app"
+                      class="browser-mock__iframe"
+                      scrolling="no"
+                      loading="lazy"
+                      title="Req AI preview"
+                    ></iframe>
+                    <a
+                      href="https://req-ai-one.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                      class="browser-mock__overlay"
+                      >View Live ↗</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__footer">
+                <div class="project-card__glyph">AI · Productivity</div>
+                <a
+                  href="https://req-ai-one.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__link"
+                  >↗ Live Demo</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SECTION 5 — SKILLS
+  ══════════════════════════════════════ -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">
+          What I <span class="accent">use</span>
+        </h2>
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <div class="skill-group__title">Languages</div>
+            <div class="skill-group__pills">
+              <span>Python</span><span>JavaScript</span><span>TypeScript</span
+              ><span>C++</span><span>Java</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group__title">Frontend</div>
+            <div class="skill-group__pills">
+              <span>React</span><span>Next.js</span><span>HTML/CSS</span
+              ><span>Tailwind</span><span>Framer Motion</span
+              ><span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group__title">AI / ML</div>
+            <div class="skill-group__pills">
+              <span>Machine Learning</span><span>NLP</span><span>XGBoost</span
+              ><span>LLM Integration</span><span>FastAPI</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group__title">Tools &amp; CS</div>
+            <div class="skill-group__pills">
+              <span>DSA</span><span>OOP</span><span>Git/GitHub</span
+              ><span>REST APIs</span><span>Competitive Programming</span>
+            </div>
+          </div>
+        </div>
+        <div class="certs reveal">
+          <div class="certs__title">Certifications</div>
+          <div class="certs__list">
+            <div class="cert-item">
+              <span class="cert-item__icon">◆</span>
+              ECPC Qualification — ICPC Collegiate Programming Contest
+            </div>
+            <div class="cert-item">
+              <span class="cert-item__icon">◆</span>
+              Frontend Development Diploma
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER PHOTO -->
+    <div class="footer-photo">
+      <img
+        src="assets/Neon%20Y2K%20Mixed%20Media%20Pixel%20Retro%20Creative%20Portfolio%20Presentation%20(1).png"
+        alt="Neon Y2K"
+      />
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
