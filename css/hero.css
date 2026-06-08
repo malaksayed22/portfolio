@@ -52,6 +52,18 @@
   50%       { opacity: 1;   transform: scaleY(1.2); }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+}
+
 /* ── SECTION 2: PHOTO ── */
 .story {
   min-height: 100vh;
